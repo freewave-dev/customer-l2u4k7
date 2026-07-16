@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Disclaimer — Orcas Law | Orcas Island, WA</title>
-<meta name="description" content="Legal disclaimer for the Orcas Law website.">
+<title>Estate Planning Attorney — Orcas Law | Orcas Island, WA</title>
+<meta name="description" content="Wills, trusts, powers of attorney and probate on Orcas Island — plans that keep island property in the family and decisions in your hands.">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
       <a href="/">Home</a>
       <a href="about.html">About</a>
       <div class="has-dd">
-        <a href="/#practice" class="dd-parent" aria-haspopup="true">Practice Areas <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/#practice" class="dd-parent active" aria-haspopup="true">Practice Areas <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <div class="dd-menu">
           <a href="real-estate.html">Real Estate</a>
           <a href="estate-planning.html">Estate Planning</a>
@@ -46,22 +46,45 @@
 <main id="main">
   <section class="page-head">
     <div class="container">
-      <p class="eyebrow">Legal</p>
-      <h1>Disclaimer</h1>
+      <p class="eyebrow">Practice Areas</p>
+      <h1>Estate Planning</h1>
     </div>
   </section>
 
   <section class="page-body">
     <div class="container">
-      <div class="prose">
-        <p>The information on this website is provided for general informational purposes only and does not constitute legal advice.</p>
-        <h2>No attorney-client relationship</h2>
-        <p>Viewing this website, or contacting Orcas Law through it, does not create an attorney-client relationship. That relationship is formed only by a signed written agreement.</p>
-        <h2>Do not send confidential information</h2>
-        <p>Please do not send confidential or time-sensitive information through this website until an attorney-client relationship has been established.</p>
-        <h2>No guarantee of outcome</h2>
-        <p>Prior results do not guarantee a similar outcome. Every matter turns on its own facts.</p>
-        <p><a href="book.html">Book a consultation &rarr;</a></p>
+      <div class="detail-grid">
+        <div class="prose">
+          <p>A good estate plan keeps decisions in your hands and spares your family guesswork. On the island, that often means planning around a family property &mdash; who keeps it, how it’s shared, and how to avoid a forced sale.</p>
+          <p>We prepare plans in plain language, explain every document before you sign it, and keep things current as life changes.</p>
+          <h2>How we can help</h2>
+          <ul>
+            <li>Wills</li>
+            <li>Revocable living trusts</li>
+            <li>Durable powers of attorney</li>
+            <li>Health care directives</li>
+            <li>Community property agreements</li>
+            <li>Probate and estate administration</li>
+          </ul>
+          <h2>What to expect</h2>
+          <ol class="steps">
+            <li><strong>Goals</strong> &mdash; a conversation about your family, your property, and what you want to happen.</li>
+            <li><strong>Draft</strong> &mdash; documents in plain English, reviewed together until they say exactly what you mean.</li>
+            <li><strong>Sign &amp; store</strong> &mdash; properly executed and witnessed, with clear guidance on where everything lives.</li>
+          </ol>
+          <p class="xlinks">Also see: <a href="real-estate.html">Real Estate</a> &middot; <a href="business-law.html">Business Law</a> &middot; <a href="civil-litigation.html">Civil Litigation</a></p>
+        </div>
+        <aside class="side-card">
+          <h3>Talk it through</h3>
+          <p>A 30-minute initial consultation &mdash; confidential, plain-language, and no obligation.</p>
+          <a class="btn btn-navy" href="book.html">Schedule a Consultation</a>
+          <ul class="side-facts">
+            <li><a href="tel:+13603762000">(360) 376-2000</a></li>
+            <li><a href="mailto:info@orcaslaw.com">info@orcaslaw.com</a></li>
+            <li>175 North Beach Road, Eastsound</li>
+            <li>Monday &ndash; Friday &middot; 9:00 AM &ndash; 5:00 PM</li>
+          </ul>
+        </aside>
       </div>
     </div>
   </section>
@@ -87,6 +110,9 @@
   t.addEventListener('click', function(){
     var open = n.classList.toggle('open');
     t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  n.addEventListener('click', function(e){
+    if(e.target.closest('a')){ n.classList.remove('open'); t.setAttribute('aria-expanded','false'); }
   });
 })();
 </script>

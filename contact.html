@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Orcas Law | Orcas Island, WA</title>
+<meta name="description" content="Reach Orcas Law in Eastsound: (360) 376-2000, info@orcaslaw.com, or 175 North Beach Road. Monday to Friday 9-5, evenings by appointment.">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Orcas Law — home">
+      <img class="brand-logo" src="https://media.freewave.dev/l2u4k7/images/logo-orcas-law.webp" alt="Orcas Law — Orcas Island, WA" width="900" height="215">
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav-links" id="navlinks" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+      <div class="has-dd">
+        <a href="/#practice" class="dd-parent" aria-haspopup="true">Practice Areas <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dd-menu">
+          <a href="real-estate.html">Real Estate</a>
+          <a href="estate-planning.html">Estate Planning</a>
+          <a href="business-law.html">Business Law</a>
+          <a href="civil-litigation.html">Civil Litigation</a>
+        </div>
+      </div>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="book.html" class="btn btn-navy">Schedule Consultation</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>We&rsquo;re easy to reach</h1>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="prose">
+          <p>Call, write, or stop by the office in Eastsound. If you already know you&rsquo;d like to meet, the fastest path is to <a href="book.html">book a consultation</a> directly.</p>
+
+          <h2>Office</h2>
+          <ul>
+            <li><strong>Phone</strong> &mdash; <a href="tel:+13603762000">(360) 376-2000</a></li>
+            <li><strong>Email</strong> &mdash; <a href="mailto:info@orcaslaw.com">info@orcaslaw.com</a></li>
+            <li><strong>Address</strong> &mdash; 175 North Beach Road, Eastsound, WA 98245</li>
+          </ul>
+
+          <h2>Hours</h2>
+          <ul>
+            <li>Monday &ndash; Friday &middot; 9:00 AM &ndash; 5:00 PM</li>
+            <li>Evenings by appointment</li>
+          </ul>
+
+          <div class="note">
+            Contacting us doesn&rsquo;t create an attorney&ndash;client relationship, and email isn&rsquo;t a secure channel &mdash; please keep confidential details for a scheduled consultation.
+          </div>
+        </div>
+
+        <form class="form-card" id="contactform">
+          <div class="form-grid">
+            <h3 class="serif" style="font-size:1.5rem">Send a message</h3>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-msg">How can we help?</label>
+              <textarea id="cf-msg" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-navy">Send Message</button>
+            </div>
+            <p class="fine" id="cf-done" role="status" hidden><strong>Thank you</strong> &mdash; we&rsquo;ve received your message and will reply within one business day.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:0">
+      <div>&copy; 2026 Orcas Law. All rights reserved. &middot; Site by <a href="https://freewave.dev" target="_blank" rel="noopener">Freewave.dev</a></div>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="sep">|</span>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t = document.querySelector('.nav-toggle'), n = document.getElementById('navlinks');
+  if(!t || !n) return;
+  t.addEventListener('click', function(){
+    var open = n.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  n.addEventListener('click', function(e){
+    if(e.target.closest('a')){ n.classList.remove('open'); t.setAttribute('aria-expanded','false'); }
+  });
+})();
+</script>
+<script>
+(function(){
+  var f = document.getElementById('contactform');
+  if(!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!f.checkValidity()){ f.reportValidity(); return; }
+    f.querySelectorAll('input,textarea,button').forEach(function(el){ el.disabled = true; });
+    document.getElementById('cf-done').hidden = false;
+  });
+})();
+</script>
+
+</body>
+</html>

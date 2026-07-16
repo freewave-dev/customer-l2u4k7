@@ -203,7 +203,9 @@ h1,h2,h3,.serif{
 /* ---------- cta ---------- */
 .cta{position:relative;background:var(--navy);overflow:hidden;isolation:isolate}
 .cta-media{position:absolute;inset:0;z-index:0}
-.cta-media img{width:100%;height:100%;object-fit:cover}
+/* this band is a ~10:1 letterbox, so only a thin slice of the photo shows —
+   bias down to the islet and waterline rather than empty sky */
+.cta-media img{width:100%;height:100%;object-fit:cover;object-position:50% 57%}
 .cta-media::after{
   content:'';position:absolute;inset:0;
   background:linear-gradient(90deg,rgba(24,52,74,.9) 0%,rgba(24,52,74,.74) 45%,rgba(24,52,74,.56) 100%);
@@ -257,6 +259,14 @@ h1,h2,h3,.serif{
 .page-head .eyebrow{color:#9db19a}
 .page-body{padding:clamp(56px,6vw,88px) 0 clamp(64px,7vw,104px);background:var(--offwhite)}
 .prose{max-width:660px}
+/* stub pages: prose left, a supporting island photo alongside */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:clamp(32px,4vw,64px);align-items:start}
+.side-figure{position:sticky;top:calc(clamp(76px,8.6vw,124px) + 28px)}
+.side-figure img{width:100%;height:auto;border-radius:var(--r-card);box-shadow:var(--shadow-card)}
+.side-figure figcaption{
+  font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--muted);
+  margin-top:.8rem;text-align:center;
+}
 .prose h2{font-size:1.75rem;margin:2.2rem 0 .7rem}
 .prose h2:first-child{margin-top:0}
 .prose p{margin-bottom:1rem;font-size:1rem;line-height:1.8}
@@ -273,6 +283,9 @@ h1,h2,h3,.serif{
 @media(max-width:980px){
   .grid-4{grid-template-columns:repeat(2,1fr)}
   .why-body{padding:56px 28px}
+  /* stacked: unstick the figure so it doesn't float oddly against the prose */
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .side-figure{position:static;max-width:480px}
 }
 @media(max-width:900px){
   .nav-links{

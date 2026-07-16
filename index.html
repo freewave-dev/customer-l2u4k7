@@ -18,8 +18,10 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<!-- the scroll fade is JS-driven; without JS the content must still be visible -->
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
@@ -94,15 +96,15 @@
   <!-- ============ practice areas ============ -->
   <section class="practice" id="practice">
     <div class="container">
-      <div class="section-head center">
+      <div class="section-head center reveal">
         <p class="eyebrow">Practice Areas</p>
         <h2>How We Can Help</h2>
       </div>
 
       <div class="grid-4">
-        <article class="p-card">
+        <article class="p-card reveal">
           <div class="p-ic">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.5 11.2a.8.8 0 0 0 .5 1.4H5V20a1 1 0 0 0 1 1h3.5v-5.2h5V21H18a1 1 0 0 0 1-1v-7.4h2a.8.8 0 0 0 .5-1.4Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.4 12 3.4l9 7"/><path d="M5.4 9.4V20.2h13.2V9.4"/><path d="M9.7 20.2v-5.6h4.6v5.6"/></svg>
           </div>
           <h3>Real Estate</h3>
           <hr class="rule">
@@ -117,9 +119,9 @@
           </a>
         </article>
 
-        <article class="p-card">
+        <article class="p-card reveal">
           <div class="p-ic">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 2h9l1 1v3.5l-6.4 6.4-.5 2.4a.6.6 0 0 0 .7.7l2.4-.5L15 12.4V21l-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm2 5h7V5.5H7Zm0 3.5h5V9H7Zm0 3.5h3v-1.5H7Z"/><path d="m20.6 5.1 1.4 1.4a1 1 0 0 1 0 1.4l-1.3 1.3-2.8-2.8 1.3-1.3a1 1 0 0 1 1.4 0Zm-2.4 2.6 2.8 2.8-6.6 6.6-3.4.6.6-3.4Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3.2H6a1.4 1.4 0 0 0-1.4 1.4v14.8A1.4 1.4 0 0 0 6 20.8h8"/><path d="M14.2 3.2 18.4 7.4v2"/><path d="M14.2 3.2v4.2h4.2"/><path d="M8 11h5.6M8 14.4h3.4"/><path d="M20.6 12.4a1.3 1.3 0 0 1 0 1.9l-5.3 5.3-2.5.6.6-2.5 5.3-5.3a1.3 1.3 0 0 1 1.9 0Z"/></svg>
           </div>
           <h3>Estate Planning</h3>
           <hr class="rule">
@@ -134,9 +136,9 @@
           </a>
         </article>
 
-        <article class="p-card">
+        <article class="p-card reveal">
           <div class="p-ic">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6a2 2 0 0 1 2 2v2h-2V4H9v2H7V4a2 2 0 0 1 2-2Z"/><path d="M3 7h18a1 1 0 0 1 1 1v3.5H13.6v-1a.6.6 0 0 0-.6-.6h-2a.6.6 0 0 0-.6.6v1H2V8a1 1 0 0 1 1-1Z"/><path d="M2 13h8.4v1c0 .3.3.6.6.6h2c.3 0 .6-.3.6-.6v-1H22v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6.2V4.8A1.6 1.6 0 0 1 10.6 3.2h2.8A1.6 1.6 0 0 1 15 4.8v1.4"/><rect x="3" y="6.2" width="18" height="14" rx="1.6"/><path d="M3 12.2h18"/><path d="M10.8 11.1h2.4v2.2h-2.4Z"/></svg>
           </div>
           <h3>Business Law</h3>
           <hr class="rule">
@@ -150,9 +152,9 @@
           </a>
         </article>
 
-        <article class="p-card">
+        <article class="p-card reveal">
           <div class="p-ic">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.2 2h1.6v2.2l6.6 1.5.4 1.6-.6.1 3 6.9c0 1.9-1.8 2.9-3.6 2.9s-3.6-1-3.6-2.9l3-6.9-5.2-1.2V19h3.4a1 1 0 0 1 1 1v1H6.2v-1a1 1 0 0 1 1-1h4V6L6 7.2l3 6.9c0 1.9-1.8 2.9-3.6 2.9S1.8 16 1.8 14.1l3-6.9-.6-.1.4-1.6 6.6-1.5Zm7.4 6.6-2.2 5.1h4.4Zm-13.2 0-2.2 5.1h4.4Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16.2"/><path d="M8.2 20.2h7.6"/><path d="M4.4 7.6h15.2"/><path d="M4.4 8.2 2 13.9h4.8Z"/><path d="M19.6 8.2 17.2 13.9H22Z"/></svg>
           </div>
           <h3>Civil Litigation</h3>
           <hr class="rule">
@@ -171,29 +173,29 @@
 
   <!-- ============ why orcas law ============ -->
   <section class="why" id="why">
-    <div class="why-media">
+    <div class="why-media reveal">
       <img src="images/attorney-portrait.webp" alt="An Orcas Law attorney at their desk in the firm's Eastsound office" loading="lazy" width="490" height="298">
     </div>
-    <div class="why-body">
+    <div class="why-body reveal">
       <p class="eyebrow">Why Orcas Law?</p>
       <h2>Island Experience Matters</h2>
       <p>Legal issues on Orcas often involve unique property, shoreline, water rights, family businesses, and island logistics. We understand the local landscape and work to provide practical, straightforward legal advice.</p>
       <div class="why-points">
         <div class="why-point">
           <div class="circ">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 9.4 7.1h1.5L8.3 11h1.9l-2.7 4h3.7v2.4h1.6V15h3.7l-2.7-4h1.9l-2.6-3.9h1.5Z"/><path d="M1.5 20c3-2.4 5.6-3.6 7.8-3.6 1.8 0 2.9.8 4.4.8 1.7 0 3.6-1.2 7.8-3.2" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 8.6 8.6h2.1l-3 4.9h2.2L6.6 18.6h10.8l-3.3-5.1h2.2l-3-4.9h2.1Z"/><path d="M12 18.6v2.2"/><path d="M6 21.4c2.2-1.1 4.2-1.6 6-1.6s3.8.5 6 1.6"/></svg>
           </div>
           <p>Deep roots in our community</p>
         </div>
         <div class="why-point">
           <div class="circ">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.2s-6.8-6.3-6.8-11.2a6.8 6.8 0 0 1 13.6 0c0 4.9-6.8 11.2-6.8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>
           </div>
           <p>Local knowledge. Practical solutions.</p>
         </div>
         <div class="why-point">
           <div class="circ">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-6.5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm13 0a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM12 12.5c-2.8 0-5 1.6-5 3.5V19h10v-3c0-1.9-2.2-3.5-5-3.5Zm-6.5.5c-2.2 0-4 1.3-4 2.9V19h4.5v-3c0-1.1.5-2.1 1.4-2.9a7 7 0 0 0-1.9-.1Zm13 0c-.6 0-1.3 0-1.9.1.9.8 1.4 1.8 1.4 2.9v3H22v-2.6c0-1.6-1.8-2.9-4-2.9Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.8" r="2.8"/><path d="M7.4 18.4v-1.2a4.6 4.6 0 0 1 9.2 0v1.2"/><circle cx="4.9" cy="9.6" r="2"/><path d="M1.4 17.6v-.9a2.9 2.9 0 0 1 2.9-2.9h.9"/><circle cx="19.1" cy="9.6" r="2"/><path d="M22.6 17.6v-.9a2.9 2.9 0 0 0-2.9-2.9h-.9"/></svg>
           </div>
           <p>Personal service. Proven results.</p>
         </div>
@@ -204,9 +206,9 @@
   <!-- ============ testimonials ============ -->
   <section class="testimonials">
     <div class="container">
-      <p class="eyebrow center">What Our Clients Say</p>
+      <p class="eyebrow center reveal">What Our Clients Say</p>
       <div class="grid-3">
-        <figure class="t-card">
+        <figure class="t-card reveal">
           <div class="stars" role="img" aria-label="5 out of 5 stars">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
@@ -218,7 +220,7 @@
           <figcaption><cite>&ndash; Orcas Island Client</cite></figcaption>
         </figure>
 
-        <figure class="t-card">
+        <figure class="t-card reveal">
           <div class="stars" role="img" aria-label="5 out of 5 stars">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
@@ -230,7 +232,7 @@
           <figcaption><cite>&ndash; San Juan County Client</cite></figcaption>
         </figure>
 
-        <figure class="t-card">
+        <figure class="t-card reveal">
           <div class="stars" role="img" aria-label="5 out of 5 stars">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
@@ -251,7 +253,7 @@
       <img src="images/cta-islands-dusk.webp" alt="" aria-hidden="true" loading="lazy" width="300" height="108">
     </div>
     <div class="container">
-      <div class="cta-body">
+      <div class="cta-body reveal">
         <h2>Let's Talk</h2>
         <p>Schedule a confidential consultation today.</p>
       </div>
@@ -356,6 +358,22 @@
   n.addEventListener('click', function(e){
     if(e.target.closest('a')){ n.classList.remove('open'); t.setAttribute('aria-expanded','false'); }
   });
+})();
+
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!els.length) return;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced || !('IntersectionObserver' in window)){
+    for(var i=0;i<els.length;i++) els[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+  for(var j=0;j<els.length;j++) io.observe(els[j]);
 })();
 </script>
 

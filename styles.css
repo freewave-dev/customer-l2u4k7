@@ -83,13 +83,9 @@ h1,h2,h3,.serif{
   border-bottom:1px solid var(--gray); /* brief: thin bottom border */
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:clamp(76px,8.6vw,124px)}
-.brand{display:flex;align-items:center;gap:.75rem;flex:none}
-.brand .mark{width:46px;height:46px;flex:none}
-.brand .wordmark{font-family:var(--serif);font-size:1.72rem;font-weight:600;color:var(--navy);letter-spacing:.06em;line-height:1;text-transform:uppercase}
-.brand .sub{
-  display:block;font-family:var(--sans);font-size:.56rem;font-weight:500;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--muted);margin-top:5px;
-}
+.brand{display:flex;align-items:center;flex:none}
+/* the supplied logo is the full lockup — mark + wordmark + tagline in one file */
+.brand-logo{height:clamp(38px,3.7vw,54px);width:auto;flex:none}
 .nav-links{display:flex;align-items:center;gap:clamp(20px,2.1vw,30px)}
 .nav-links a:not(.btn){
   font-size:.9rem;font-weight:400;color:var(--charcoal);position:relative;padding:4px 0;white-space:nowrap;

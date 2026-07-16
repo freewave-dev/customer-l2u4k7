@@ -166,6 +166,9 @@ h1,h2,h3,.serif{
 .why-media{position:relative;min-height:300px;overflow:hidden}
 .why-media img{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  /* the source is a tall portrait but this slot is landscape — bias up so the
+     face stays in frame instead of being cropped off the top */
+  object-position:50% 46%;
   transition:transform .7s var(--ease);   /* brief: slight image zoom on hover */
 }
 .why-media:hover img{transform:scale(1.04)}
